@@ -20,9 +20,8 @@ class Styrofoam:
 	def watts_n_m2(self, n, dt):
 		return self.heat_conductivity * n * dt / (self.thickness / 1000)
 
-
-
 base = Styrofoam(50, 585, 1185, 0.037, 599, 8, 'XPS 500SL', 'e-byggstore.se')
+base = Styrofoam(100, 585, 2385, 0.037, 1069, 4, 'XPS 500SL', 'e-byggstore.se')
 base_area = 2.4*4.5
 
 walls = Styrofoam(100,600,1200,0.038, 339, 5,'S80', 'e-byggstore.se')
